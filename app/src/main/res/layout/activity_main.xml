@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLayout"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewBaseAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Base:"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editTextBaseAmount"
+        android:layout_width="684dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/textViewBaseAmount"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="numberDecimal"
+        android:hint="Enter amount in dollars and cents" />
+
+    <TextView
+        android:id="@+id/textViewTipPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextBaseAmount"
+        android:layout_marginTop="33dp"
+        android:text="Tip percentage:"
+        android:textSize="24sp" />
+
+    <SeekBar
+        android:id="@+id/seekBarTipPercent"
+        android:layout_width="719dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/textViewTipPercent"
+        android:max="30" />
+
+    <TextView
+        android:id="@+id/textViewSelectedTipPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBarTipPercent"
+        android:layout_marginTop="6dp"
+        android:text="0%"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textViewTipAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSelectedTipPercent"
+        android:layout_marginTop="100dp"
+        android:text="Tip: "
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textViewTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTipAmount"
+        android:layout_marginTop="100dp"
+        android:text="Total: "
+        android:textSize="24sp" />
+
+</RelativeLayout>
